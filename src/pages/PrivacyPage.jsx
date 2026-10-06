@@ -1,0 +1,4 @@
+import { profile } from '../data/site'
+export default function PrivacyPage() {
+  return <section className="section privacy-page container"><p className="eyebrow"><span />INFORMAÇÃO</p><h1>Privacidade</h1><p>Este website apresenta os serviços e o percurso profissional de {profile.name}.</p><h2>Cookies e análise de visitas</h2><p>Esta versão do website não utiliza cookies, ferramentas de análise de visitas ou formulários de recolha de dados.</p><h2>Contacto por email</h2><p>Os links de contacto abrem a tua aplicação de email. Se enviares uma mensagem, o teu endereço e as informações que partilhares serão utilizados para responder ao teu pedido e conversar sobre o projeto.</p><h2>Pedidos sobre os teus dados</h2><p>Podes contactar-me em <a href={`mailto:${profile.email}`}>{profile.email}</a> para esclarecer dúvidas ou pedir a eliminação das informações que tenhas enviado, quando aplicável.</p><a className="button" href="#inicio">Voltar ao início</a></section>
+}

@@ -1,0 +1,6 @@
+import Portrait from '../ui/Portrait'
+import Icon from '../ui/Icon'
+import { technologies } from '../../data/site'
+export default function Hero() {
+  return <section id="inicio" className="hero-section"><div className="container hero-grid"><div className="hero-content"><p className="eyebrow"><span />DESENVOLVIMENTO WEB & MOBILE</p><h1>A tua ideia.<br />O meu código.<br /><em>Uma solução.</em></h1><p className="hero-description">Olá, sou o Tiago. Desenvolvo websites, aplicações e software à medida para dar forma às tuas ideias e simplificar o teu negócio.</p><div className="hero-actions"><a className="button" href="#contacto">Vamos falar do teu projeto <Icon name="diagonal" /></a><a className="text-link" href="#servicos">Explorar serviços <Icon /></a></div><div className="hero-note"><span className="status-dot" />Experiência em desenvolvimento. Proximidade em cada projeto.</div></div><div className="hero-portrait"><div className="portrait-topline"><span>TIAGO SANTOS</span><span>WEB / MOBILE / SOFTWARE</span></div><Portrait /><div className="portrait-bottomline"><span><Icon name="pin" size={13} /> Portugal</span><span>Do conceito ao código.</span></div></div></div><div className="container technology-strip"><span>FERRAMENTAS DO MEU DIA A DIA</span><div>{technologies.map(tech => <span key={tech}>{tech}</span>)}</div></div></section>
+}

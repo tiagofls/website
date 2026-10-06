@@ -1,0 +1,5 @@
+import { experience } from '../../data/site'
+import SectionHeading from '../ui/SectionHeading'
+export default function Experience() {
+  return <section id="experiencia" className="section experience-section"><div className="container experience-layout"><div className="experience-intro"><SectionHeading label="PERCURSO PROFISSIONAL" title={<>Experiência que<br />passa ao teu projeto.</>} description="Desenvolvimento de software em contexto profissional e ensino superior. Duas perspetivas que se complementam na forma como trabalho." /><div className="experience-note"><span>DA PRÁTICA À PARTILHA</span><p>Construir soluções, resolver problemas e tornar a tecnologia mais clara.</p></div></div><div className="timeline">{experience.map(item => <article className="timeline-item" key={item.role + item.company}><p className="timeline-period">{item.period}</p><h3>{item.role}</h3><p className="timeline-company">{item.company}</p><p className="timeline-description">{item.description}</p><div className="tags">{item.tags.map(tag => <span key={tag}>{tag}</span>)}</div></article>)}</div></div></section>
+}
